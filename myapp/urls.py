@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('album/', include('album.urls', namespace = 'photoalbum')),
+    path('blog/', include('blog.urls', namespace = 'blog')),
 ]
 
 if settings.DEBUG:
