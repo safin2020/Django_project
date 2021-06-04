@@ -1,14 +1,25 @@
 from django.shortcuts import render
+
+# Create your views here.
 from .models import Album
+
 # Create your views here.
 
+def album(request):
 
-# photo album views
+    albums = Album.objects.all()
 
-def photo_album(request):
-    photo_album = Album.objects.all()
     context = {
-        'photo_album':photo_album
+       'albums': albums
     }
 
-    return render(request,'album/index.html',context)
+    return render(request, 'album/index.html', context)
+
+def blueberry(request):
+
+
+    context = {
+      
+    }
+
+    return render(request, 'album/blueberry.html', context)

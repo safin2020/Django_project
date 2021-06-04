@@ -1,8 +1,9 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
-app_name = 'photoalbum'
+app_name = 'album'
 
 urlpatterns = [
-    path('', views.photo_album,name='photoAlbum'),
+    path('', views.album, name='album'),
+    path('blueberry/', views.blueberry, name='blueberry')
 ]
