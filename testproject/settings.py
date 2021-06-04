@@ -143,13 +143,13 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
 
-AWS_ACCESS_KEY_ID = 'AKIARVGPJVYVLNFAAMTG'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'nasim.secpstorage'
-AWS_S3_FILE_OVERWRITE = True
-AWS_DEFAULT_ACL = None
-AWS_QUERYSTRING_AUTH = False
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# AWS_ACCESS_KEY_ID = 'AKIARVGPJVYVLNFAAMTG'
+# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_STORAGE_BUCKET_NAME = 'nasim.secpstorage'
+# AWS_S3_FILE_OVERWRITE = True
+# AWS_DEFAULT_ACL = None
+# AWS_QUERYSTRING_AUTH = False
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 '''
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
